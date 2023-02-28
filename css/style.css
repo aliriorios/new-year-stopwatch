@@ -1,0 +1,82 @@
+@charset "UTF8";
+
+:root {
+    /* Paleta de cores */
+    --background-color: #1b1b1d;
+    --text-color: #ffffff;
+
+    /* 
+    1rem == 10px
+    1.6 == 16px
+    */
+    font-size: 62.5%;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    color: var(--text-color);
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* BACKGROUND ------------------------------------- */
+#background {
+    background: var(--background-color);
+    height: 100vh;
+}
+
+/* WATCH -------------------------------------------*/
+#watch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 400px;
+    width: 100%;
+    max-width: 1280px;
+
+    padding: 20px;
+}
+
+/* TIMER ------------------------------------------ */
+#timer {
+    margin: auto;
+
+    border-spacing: 20px;
+}
+
+#timer_count td {
+    font-size: 5rem;
+
+    padding: 50px;
+    width: 110px;
+
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+#timer_text td {
+    font-size: 2rem;
+
+    padding: 1%;
+}
+
+/* NEXT YEAAR TEXT -------------------------------- */
+#nextYear {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+
+    font-size: 8rem;
+    opacity: 0.1;
+    transform: translateX(-50%);
+  }
